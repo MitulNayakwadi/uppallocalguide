@@ -1,0 +1,39 @@
+{
+  "name": "uppal-local-guide",
+  "version": "1.0.0",
+  "description": "AI-powered street food guide for Uppal Kalan, Telangana - Built with Kiro for AI for Bharat Week 5",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start",
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install",
+    "test": "echo \"Run tests in frontend and backend directories\"",
+    "lint": "cd frontend && npm run lint"
+  },
+  "keywords": [
+    "food-guide",
+    "uppal-kalan",
+    "telangana",
+    "street-food",
+    "ai",
+    "kiro",
+    "local-guide",
+    "hyderabad"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_USERNAME/uppal-local-guide"
+  },
+  "bugs": {
+    "url": "https://github.com/YOUR_USERNAME/uppal-local-guide/issues"
+  },
+  "homepage": "https://github.com/YOUR_USERNAME/uppal-local-guide#readme"
+}

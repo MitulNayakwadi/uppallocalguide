@@ -1,0 +1,202 @@
+{
+  "cuisines": {
+    "telangana": {
+      "name": "Telangana Cuisine",
+      "description": "Authentic regional cuisine of Telangana state, known for rich flavors and traditional cooking methods",
+      "popularDishes": [
+        {
+          "name": "Hyderabadi Biryani",
+          "description": "Aromatic rice dish cooked with meat using dum pukht method",
+          "ingredients": ["Basmati rice", "Meat", "Saffron", "Yogurt", "Spices"],
+          "priceRange": "₹150-300"
+        },
+        {
+          "name": "Haleem",
+          "description": "Slow-cooked stew of meat, lentils, and wheat, especially popular during Ramadan",
+          "ingredients": ["Mutton", "Wheat", "Lentils", "Spices"],
+          "priceRange": "₹120-200"
+        },
+        {
+          "name": "Mirchi ka Salan",
+          "description": "Spicy and tangy curry made with green chilies, perfect with biryani",
+          "ingredients": ["Green chilies", "Peanuts", "Sesame seeds", "Tamarind"],
+          "priceRange": "₹80-120"
+        }
+      ],
+      "characteristics": [
+        "Rich and flavorful",
+        "Use of traditional spices",
+        "Slow cooking methods",
+        "Meat-centric dishes",
+        "Perfect balance of sweet and spicy"
+      ]
+    },
+    "street_food": {
+      "name": "Street Food",
+      "description": "Quick, affordable, and flavorful snacks available from street vendors",
+      "popularDishes": [
+        {
+          "name": "Samosa",
+          "description": "Crispy triangular pastry filled with spiced potatoes",
+          "ingredients": ["Flour", "Potatoes", "Peas", "Spices"],
+          "priceRange": "₹10-20 per piece"
+        },
+        {
+          "name": "Pani Puri",
+          "description": "Hollow crispy shells filled with spiced water and chutneys",
+          "ingredients": ["Semolina shells", "Spiced water", "Chutneys", "Potatoes"],
+          "priceRange": "₹30-50 per plate"
+        },
+        {
+          "name": "Mirchi Bajji",
+          "description": "Deep-fried green chilies coated in gram flour batter",
+          "ingredients": ["Green chilies", "Gram flour", "Spices"],
+          "priceRange": "₹20-40 per plate"
+        }
+      ],
+      "characteristics": [
+        "Quick preparation",
+        "Affordable pricing",
+        "Fresh ingredients",
+        "Visible cooking process",
+        "Perfect for snacking"
+      ]
+    },
+    "south_indian": {
+      "name": "South Indian",
+      "description": "Traditional South Indian breakfast and meal items, healthy and vegetarian-friendly",
+      "popularDishes": [
+        {
+          "name": "Idli Sambar",
+          "description": "Steamed rice cakes served with lentil curry",
+          "ingredients": ["Rice", "Urad dal", "Lentils", "Vegetables"],
+          "priceRange": "₹40-80"
+        },
+        {
+          "name": "Dosa",
+          "description": "Crispy crepe made from fermented rice and lentil batter",
+          "ingredients": ["Rice", "Urad dal", "Fenugreek seeds"],
+          "priceRange": "₹50-120"
+        },
+        {
+          "name": "Pesarattu",
+          "description": "Green gram pancake, a specialty of Andhra Pradesh",
+          "ingredients": ["Green gram", "Ginger", "Green chilies"],
+          "priceRange": "₹60-100"
+        }
+      ],
+      "characteristics": [
+        "Healthy and nutritious",
+        "Fermented foods",
+        "Vegetarian-friendly",
+        "Light and digestible",
+        "Traditional breakfast items"
+      ]
+    },
+    "north_indian": {
+      "name": "North Indian",
+      "description": "Rich and creamy curries, bread-based meals, and tandoor items",
+      "popularDishes": [
+        {
+          "name": "Butter Chicken",
+          "description": "Creamy tomato-based chicken curry",
+          "ingredients": ["Chicken", "Tomatoes", "Cream", "Spices"],
+          "priceRange": "₹180-250"
+        },
+        {
+          "name": "Naan",
+          "description": "Leavened bread cooked in tandoor",
+          "ingredients": ["Flour", "Yogurt", "Yeast"],
+          "priceRange": "₹30-60 per piece"
+        },
+        {
+          "name": "Dal Makhani",
+          "description": "Rich and creamy black lentil curry",
+          "ingredients": ["Black lentils", "Cream", "Butter", "Spices"],
+          "priceRange": "₹120-180"
+        }
+      ],
+      "characteristics": [
+        "Rich and creamy",
+        "Use of dairy products",
+        "Tandoor cooking",
+        "Bread-based meals",
+        "Heavy and filling"
+      ]
+    },
+    "chinese": {
+      "name": "Chinese (Indo-Chinese)",
+      "description": "Indian adaptation of Chinese cuisine, spicy and flavorful",
+      "popularDishes": [
+        {
+          "name": "Chicken Manchurian",
+          "description": "Battered chicken in spicy sauce",
+          "ingredients": ["Chicken", "Soy sauce", "Vinegar", "Spices"],
+          "priceRange": "₹150-200"
+        },
+        {
+          "name": "Fried Rice",
+          "description": "Stir-fried rice with vegetables and sauces",
+          "ingredients": ["Rice", "Vegetables", "Soy sauce", "Spices"],
+          "priceRange": "₹100-150"
+        },
+        {
+          "name": "Chilli Chicken",
+          "description": "Spicy chicken stir-fry with bell peppers",
+          "ingredients": ["Chicken", "Bell peppers", "Soy sauce", "Chili sauce"],
+          "priceRange": "₹160-220"
+        }
+      ],
+      "characteristics": [
+        "Spicy and tangy",
+        "Quick cooking",
+        "Sauce-based dishes",
+        "Vegetable-heavy",
+        "Popular fusion cuisine"
+      ]
+    }
+  },
+  "dietaryCategories": {
+    "vegetarian": {
+      "name": "Vegetarian",
+      "description": "No meat, fish, or eggs",
+      "availableCuisines": ["South Indian", "Street Food", "North Indian"],
+      "popularOptions": ["Dosa", "Idli", "Samosa", "Chaat", "Dal"]
+    },
+    "vegan": {
+      "name": "Vegan",
+      "description": "No animal products including dairy",
+      "availableCuisines": ["South Indian", "Street Food"],
+      "popularOptions": ["Plain Dosa", "Idli without ghee", "Some street snacks"]
+    },
+    "jain": {
+      "name": "Jain Food",
+      "description": "No root vegetables, strict vegetarian",
+      "availableCuisines": ["South Indian", "Street Food"],
+      "popularOptions": ["Idli", "Dosa", "Selected chaat items"]
+    },
+    "halal": {
+      "name": "Halal",
+      "description": "Prepared according to Islamic dietary laws",
+      "availableCuisines": ["Telangana", "North Indian"],
+      "popularOptions": ["Biryani", "Haleem", "Kebabs", "Chicken curries"]
+    }
+  },
+  "priceRanges": {
+    "budget": {
+      "range": "₹30-100",
+      "description": "Affordable street food and basic meals",
+      "examples": ["Samosa", "Chaat", "Simple dosa", "Tea"]
+    },
+    "mid-range": {
+      "range": "₹100-250",
+      "description": "Restaurant meals and specialty dishes",
+      "examples": ["Biryani", "Full meals", "Restaurant curries"]
+    },
+    "premium": {
+      "range": "₹250+",
+      "description": "Fine dining and specialty restaurants",
+      "examples": ["Multi-course meals", "Premium restaurants", "Special occasions"]
+    }
+  }
+}

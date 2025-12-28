@@ -1,0 +1,157 @@
+{
+  "areas": {
+    "uppal-market": {
+      "name": "Uppal Market",
+      "description": "Traditional market area with authentic street food vendors and local eateries",
+      "characteristics": [
+        "Authentic local experience",
+        "Budget-friendly options",
+        "Traditional street food",
+        "Busy during morning and evening",
+        "Popular with locals"
+      ],
+      "foodTypes": ["Street Food", "Traditional Snacks", "Tea Stalls"],
+      "priceRange": "₹20-100",
+      "bestTimes": ["7-9 AM", "5-8 PM"],
+      "landmarks": ["Market Center", "Main Market Road"],
+      "transportation": ["Bus stop nearby", "Auto-rickshaw accessible"],
+      "restaurantCount": 8
+    },
+    "main-road": {
+      "name": "Main Road",
+      "description": "Primary commercial area with mix of restaurants and food outlets",
+      "characteristics": [
+        "Variety of cuisines",
+        "Mix of budget and mid-range",
+        "Good for families",
+        "Easy accessibility",
+        "Parking available"
+      ],
+      "foodTypes": ["Restaurants", "Fast Food", "Regional Cuisine"],
+      "priceRange": "₹50-250",
+      "bestTimes": ["12-2 PM", "7-9 PM"],
+      "landmarks": ["Uppal Circle", "Bus Stop", "Main Junction"],
+      "transportation": ["Main bus route", "Easy parking", "Auto-rickshaw hub"],
+      "restaurantCount": 12
+    },
+    "ikea-area": {
+      "name": "IKEA Area",
+      "description": "Modern retail area with contemporary dining options and food courts",
+      "characteristics": [
+        "Modern dining options",
+        "Family-friendly",
+        "Clean and hygienic",
+        "Variety of cuisines",
+        "Shopping mall food courts"
+      ],
+      "foodTypes": ["Food Courts", "International Cuisine", "Chain Restaurants"],
+      "priceRange": "₹100-400",
+      "bestTimes": ["12-4 PM", "6-9 PM"],
+      "landmarks": ["IKEA Store", "Retail Parks", "Shopping Centers"],
+      "transportation": ["Ample parking", "Cab services", "Private transport"],
+      "restaurantCount": 6
+    },
+    "ramanthapur": {
+      "name": "Ramanthapur",
+      "description": "Established residential area with traditional restaurants and family eateries",
+      "characteristics": [
+        "Traditional restaurants",
+        "Family-run businesses",
+        "Authentic recipes",
+        "Established reputation",
+        "Local community favorites"
+      ],
+      "foodTypes": ["Traditional Restaurants", "Regional Specialties", "Sweet Shops"],
+      "priceRange": "₹80-200",
+      "bestTimes": ["11 AM-2 PM", "7-10 PM"],
+      "landmarks": ["Ramanthapur Junction", "Local Temples", "Community Centers"],
+      "transportation": ["Bus connectivity", "Auto-rickshaw available"],
+      "restaurantCount": 4
+    }
+  },
+  "transportation": {
+    "bus_routes": [
+      {
+        "route": "Uppal to Secunderabad",
+        "frequency": "Every 10-15 minutes",
+        "timing": "5:30 AM - 11:00 PM"
+      },
+      {
+        "route": "Uppal to Hitech City",
+        "frequency": "Every 20 minutes",
+        "timing": "6:00 AM - 10:30 PM"
+      },
+      {
+        "route": "Local Uppal Circle",
+        "frequency": "Every 5-10 minutes",
+        "timing": "6:00 AM - 10:00 PM"
+      }
+    ],
+    "auto_rickshaw": {
+      "availability": "High",
+      "fare_range": "₹30-100 within Uppal area",
+      "peak_hours": "8-10 AM, 6-8 PM"
+    },
+    "parking": {
+      "uppal_market": "Street parking, limited",
+      "main_road": "Roadside parking available",
+      "ikea_area": "Ample parking spaces",
+      "ramanthapur": "Moderate parking availability"
+    }
+  },
+  "demographics": {
+    "primary_users": [
+      {
+        "type": "Office Workers",
+        "description": "IT professionals working in nearby areas",
+        "food_preferences": ["Quick meals", "Budget-friendly", "Healthy options"],
+        "peak_times": ["8-9 AM", "1-2 PM", "7-8 PM"]
+      },
+      {
+        "type": "Local Residents",
+        "description": "Families and individuals living in Uppal area",
+        "food_preferences": ["Traditional food", "Family dining", "Value for money"],
+        "peak_times": ["12-2 PM", "7-9 PM"]
+      },
+      {
+        "type": "Students",
+        "description": "College students and coaching center attendees",
+        "food_preferences": ["Budget meals", "Street food", "Quick snacks"],
+        "peak_times": ["11 AM-1 PM", "4-6 PM"]
+      },
+      {
+        "type": "Shoppers",
+        "description": "Visitors to IKEA and retail areas",
+        "food_preferences": ["Variety", "Family-friendly", "Clean environment"],
+        "peak_times": ["12-4 PM", "6-8 PM"]
+      }
+    ]
+  },
+  "seasonal_patterns": {
+    "monsoon": {
+      "months": ["June", "July", "August", "September"],
+      "food_trends": ["Hot snacks popular", "Indoor dining preferred", "Fried items in demand"],
+      "business_impact": "Street vendors may have reduced hours"
+    },
+    "winter": {
+      "months": ["November", "December", "January", "February"],
+      "food_trends": ["Outdoor dining popular", "Street food peak season", "Hot beverages in demand"],
+      "business_impact": "Best season for street food vendors"
+    },
+    "summer": {
+      "months": ["March", "April", "May"],
+      "food_trends": ["Cold drinks popular", "Light meals preferred", "AC restaurants busy"],
+      "business_impact": "Indoor restaurants see more traffic"
+    },
+    "festivals": {
+      "ramadan": {
+        "impact": "Haleem becomes extremely popular",
+        "special_items": ["Haleem", "Iftar items", "Dates", "Special sweets"]
+      },
+      "diwali": {
+        "impact": "Sweet shops see high demand",
+        "special_items": ["Traditional sweets", "Dry fruits", "Festival specials"]
+      }
+    }
+  }
+}
