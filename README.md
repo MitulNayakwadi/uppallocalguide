@@ -4,11 +4,38 @@
 
 An AI-powered local food guide that understands Uppal Kalan's street food culture and helps users discover authentic dining experiences using Kiro's context-aware capabilities.
 
-## 🎯 Challenge Overview
+## 🌟 Project Links & Sharing
 
-**Theme**: Build a tool that understands your specific city or culture  
-**Location**: Uppal Kalan, Telangana, India  
-**AI Integration**: Kiro with custom local context files  
+- **🔗 GitHub Repository**: https://github.com/MitulNayakwadi/uppallocalguide
+- **📝 Technical Blog**: [AWS Builder Center Blog Post](./AWS_BUILDER_CENTER_BLOG.md)
+- **🚀 Deployment Guide**: [AWS Deployment Guide](./AWS_DEPLOYMENT_GUIDE.md)
+- **✨ Enhanced Features**: [UI Features Documentation](./ENHANCED_UI_FEATURES.md)
+- **📱 Live Demo**: [Deploy to see live version]
+
+### How to Share This Project
+
+1. **GitHub Repository**: Share the main repository link
+   ```
+   https://github.com/MitulNayakwadi/uppallocalguide
+   ```
+
+2. **Clone Command**: For developers who want to run locally
+   ```bash
+   git clone https://github.com/MitulNayakwadi/uppallocalguide.git
+   ```
+
+3. **Technical Blog**: Share the comprehensive technical writeup
+   - Submit to AWS Builder Center using the blog post in this repository
+   - Link: [AWS_BUILDER_CENTER_BLOG.md](./AWS_BUILDER_CENTER_BLOG.md)
+
+4. **Social Media**: Use these hashtags and descriptions
+   ```
+   🍲 Built an AI-powered local food guide for Uppal Kalan! 
+   Features cultural intelligence, budget-aware recommendations, 
+   and authentic local context. #AIforBharat #LocalTech #FoodTech
+   
+   GitHub: https://github.com/MitulNayakwadi/uppallocalguide
+   ```  
 
 ## ✨ What Makes This Special
 
@@ -96,8 +123,8 @@ uppal-local-guide/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/uppal-local-guide.git
-   cd uppal-local-guide
+   git clone https://github.com/MitulNayakwadi/uppallocalguide.git
+   cd uppallocalguide
    ```
 
 2. **Install all dependencies**
@@ -272,18 +299,24 @@ git push origin main
 3. Update CORS settings for production domains
 4. Test all endpoints in production
 
-## 📝 Blog Post
+## 📝 Technical Blog for AWS Builder Center
 
-Read the complete technical writeup on AWS Builder Center:
+**Ready-to-Submit Blog Post**: [AWS_BUILDER_CENTER_BLOG.md](./AWS_BUILDER_CENTER_BLOG.md)
 
-🔗 **[Building Uppal Kalan Street Food Guide with Kiro](YOUR_BLOG_URL)**
+This comprehensive technical article covers:
+- **Architecture & Design**: Full-stack implementation details
+- **AI Integration**: How Kiro powers cultural intelligence
+- **Performance Optimizations**: Frontend and backend optimizations
+- **AWS Deployment**: Production-ready cloud architecture
+- **Cultural Context**: Building locally-aware applications
+- **Code Examples**: Real implementation snippets
+- **Lessons Learned**: Technical and business insights
 
-The blog post covers:
-- Challenge approach and solution design
-- Technical implementation details
-- How Kiro's context system works
-- Code examples and architecture
-- Lessons learned and future improvements
+**How to Submit to AWS Builder Center:**
+1. Copy the content from `AWS_BUILDER_CENTER_BLOG.md`
+2. Visit [AWS Builder Center](https://aws.amazon.com/builders/)
+3. Submit as a technical blog post
+4. Include the GitHub repository link: https://github.com/MitulNayakwadi/uppallocalguide
 
 ## 🤝 Contributing
 
