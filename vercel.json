@@ -4,9 +4,6 @@
   "devCommand": "cd frontend && npm run dev",
   "installCommand": "npm install && cd frontend && npm install && cd ../backend && npm install",
   "framework": "nextjs",
-  "projectSettings": {
-    "sourceFilesOutsideRootDirectory": true
-  },
   "env": {
     "NEXT_PUBLIC_API_URL": {
       "description": "The base URL for API calls. Leave empty for relative URLs on Vercel."
