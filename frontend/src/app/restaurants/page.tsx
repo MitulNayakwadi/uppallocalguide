@@ -36,7 +36,8 @@ export default function RestaurantsPage() {
 
   const fetchRestaurants = async () => {
     try {
-      const response = await fetch('http://localhost:5001/api/v1/restaurants');
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5001/api/v1';
+      const response = await fetch(`${apiUrl}/restaurants`);
       const data = await response.json();
       
       if (data.success) {

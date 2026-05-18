@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import RestaurantCard from './RestaurantCard';
 import { recommendationApi } from '@/utils/api';
+import type { Restaurant } from '@/types/restaurant';
 
 export default function FeaturedRestaurants() {
   const [restaurants, setRestaurants] = useState<Restaurant[]>([]);

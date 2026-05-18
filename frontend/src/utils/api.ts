@@ -1,10 +1,14 @@
 import { APIResponse, Restaurant, SearchFilters, SearchPreferences } from '@/types/restaurant';
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5001/api/v1';
+// Use relative URLs on Vercel, fallback to configured URL for local development
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || '/api/v1';
 
 class ApiClient {
   private async request<T>(endpoint: string, options?: RequestInit): Promise<APIResponse<T>> {
-    const url = `${API_BASE_URL}${endpoint}`;
+    // Use relative URL if API_BASE_URL is empty or a relative path
+    const url = API_BASE_URL.startsWith('http') 
+      ? `${API_BASE_URL}${endpoint}`
+      : `${API_BASE_URL}${endpoint}`;
     
     try {
       const response = await fetch(url, {

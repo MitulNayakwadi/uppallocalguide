@@ -1,359 +1,305 @@
 # 🍲 Uppal Kalan Street Food Guide
 
-**AI for Bharat Week 5 Challenge Submission**
+> AI-powered local food discovery platform for Uppal Kalan, Hyderabad - Built with Kiro AI for AI for Bharat Week 5
 
-An AI-powered local food guide that understands Uppal Kalan's street food culture and helps users discover authentic dining experiences using Kiro's context-aware capabilities.
+[![Next.js](https://img.shields.io/badge/Next.js-16.1-black?logo=next.js)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19.2-blue?logo=react)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?logo=typescript)](https://www.typescriptlang.org/)
+[![Express](https://img.shields.io/badge/Express-4.18-green?logo=express)](https://expressjs.com/)
+[![Gemini AI](https://img.shields.io/badge/Gemini-AI-purple?logo=google)](https://ai.google.dev/)
 
-## 🌟 Project Links & Sharing
+## ✨ Features
 
-- **🔗 GitHub Repository**: https://github.com/MitulNayakwadi/uppallocalguide
-- **📝 Technical Blog**: [AWS Builder Center Blog Post](./AWS_BUILDER_CENTER_BLOG.md)
-- **🚀 Deployment Guide**: [AWS Deployment Guide](./AWS_DEPLOYMENT_GUIDE.md)
-- **✨ Enhanced Features**: [UI Features Documentation](./ENHANCED_UI_FEATURES.md)
-- **📱 Live Demo**: [Deploy to see live version]
+### 🤖 AI-Powered Recommendations (Coming Soon)
+- **Natural Language Understanding**: Ask in plain English (e.g., "I want spicy biryani under ₹200")
+- **Personalized Suggestions**: Get 2-3 tailored restaurant recommendations
+- **Context-Aware**: Understands budget, cuisine, dietary needs, and timing
+- **In Development**: This feature is currently being built
 
-### How to Share This Project
+### 🔍 Smart Search & Filtering
+- Real-time restaurant search
+- Filter by budget, time of day, and cuisine type
+- Interactive budget slider with visual feedback
+- Quick search presets for common scenarios
 
-1. **GitHub Repository**: Share the main repository link
-   ```
-   https://github.com/MitulNayakwadi/uppallocalguide
-   ```
+### 🗺️ Location Intelligence
+- Google Maps integration showing Uppal, Hyderabad
+- Interactive restaurant markers
+- Area-based recommendations
+- Local context awareness
 
-2. **Clone Command**: For developers who want to run locally
-   ```bash
-   git clone https://github.com/MitulNayakwadi/uppallocalguide.git
-   ```
+### 📊 Rich Restaurant Data
+- 5+ featured restaurants with complete details
+- Ratings, reviews, and pricing information
+- Specialties and popular dishes
+- Operating hours and busy times
+- Dietary options (vegetarian, vegan, halal, etc.)
 
-3. **Technical Blog**: Share the comprehensive technical writeup
-   - Submit to AWS Builder Center using the blog post in this repository
-   - Link: [AWS_BUILDER_CENTER_BLOG.md](./AWS_BUILDER_CENTER_BLOG.md)
-
-4. **Social Media**: Use these hashtags and descriptions
-   ```
-   🍲 Built an AI-powered local food guide for Uppal Kalan! 
-   Features cultural intelligence, budget-aware recommendations, 
-   and authentic local context. #AIforBharat #LocalTech #FoodTech
-   
-   GitHub: https://github.com/MitulNayakwadi/uppallocalguide
-   ```  
-
-## ✨ What Makes This Special
-
-- **Local Intelligence**: `.kiro/steering/product.md` teaches Kiro about Uppal Kalan's food culture
-- **Smart Recommendations**: AI understands budget constraints, timing, and local preferences  
-- **Authentic Data**: 30+ verified local restaurants and street food vendors
-- **Cultural Context**: Explains Telangana cuisine and local dining patterns
-- **Budget-Aware**: Recommendations aligned with local economic patterns
-
-## 🚀 Features
-
-### Core Functionality
-- **Smart Search**: Find food by budget, cuisine, time of day, and location
-- **Personalized Recommendations**: AI suggests restaurants based on your preferences
-- **Local Vendor Directory**: Comprehensive list of Uppal Kalan eateries
-- **Cultural Guide**: Learn about authentic Telangana dishes and ingredients
-- **Peak Hours Intelligence**: Know when restaurants are busy or quiet
-
-### User Experience
-- **Mobile-First Design**: Optimized for smartphones and tablets
-- **Quick Filters**: One-click access to popular searches
-- **Detailed Restaurant Pages**: Complete information including menus and reviews
-- **Favorites System**: Save your preferred restaurants
-- **Real-time Status**: See which restaurants are currently open
-
-## 🛠️ Technology Stack
-
-### Frontend
-- **Framework**: Next.js 14 with React 18
-- **Styling**: Tailwind CSS for responsive design
-- **State Management**: Zustand for lightweight state handling
-- **HTTP Client**: Axios for API communication
-- **Icons**: Lucide React for consistent iconography
-
-### Backend
-- **Runtime**: Node.js 18+
-- **Framework**: Express.js with TypeScript support
-- **Database**: Supabase (PostgreSQL) for structured data
-- **API Style**: RESTful with JSON responses
-- **Validation**: Input validation and error handling
-
-### AI Integration
-- **Context System**: Kiro steering files for local knowledge
-- **Decision Logic**: AI-informed recommendation algorithms
-- **Cultural Data**: Structured local food culture information
-
-## 📂 Project Structure
-
-```
-uppal-local-guide/
-├── .kiro/                          # 🎯 Kiro AI Context (CRITICAL)
-│   ├── steering/
-│   │   ├── product.md              # Local Uppal Kalan knowledge
-│   │   ├── tech.md                 # Technology standards
-│   │   ├── structure.md            # Project organization
-│   │   ├── api-standards.md        # API conventions
-│   │   └── testing-standards.md    # Testing guidelines
-│   ├── hooks/                      # Automation hooks
-│   └── specs/                      # Project specifications
-├── frontend/                       # Next.js application
-│   ├── components/                 # React components
-│   ├── pages/                      # Next.js pages
-│   ├── styles/                     # CSS and styling
-│   └── utils/                      # Helper functions
-├── backend/                        # Express.js API
-│   ├── routes/                     # API endpoints
-│   ├── controllers/                # Business logic
-│   ├── models/                     # Data models
-│   └── services/                   # Core services
-├── data/                          # Local restaurant data
-│   ├── restaurants.json           # Restaurant database
-│   ├── cuisines.json              # Cuisine information
-│   └── areas.json                 # Location data
-└── docs/                          # Documentation
-```
-
-## 🏃‍♂️ Quick Start
+## 🚀 Quick Start
 
 ### Prerequisites
 - Node.js 18+ installed
 - npm or yarn package manager
-- Git for version control
+- Google Maps API key (for maps)
 
 ### Installation
 
 1. **Clone the repository**
-   ```bash
-   git clone https://github.com/MitulNayakwadi/uppallocalguide.git
-   cd uppallocalguide
-   ```
+```bash
+git clone https://github.com/YOUR_USERNAME/uppal-local-guide.git
+cd uppal-local-guide
+```
 
-2. **Install all dependencies**
-   ```bash
-   npm run install:all
-   ```
+2. **Install dependencies**
+```bash
+npm run install:all
+```
 
-3. **Set up environment variables**
-   ```bash
-   cp .env.example .env
-   # Edit .env with your configuration
-   ```
+3. **Install and setup Ollama**
+
+3. **Configure environment variables**
+
+Create `.env` files with your configuration:
+
+**Backend** (`backend/.env`):
+```env
+PORT=5001
+NODE_ENV=development
+```
+
+**Frontend** (`frontend/.env.local`):
+```env
+NEXT_PUBLIC_API_URL=http://localhost:5001/api/v1
+NEXT_PUBLIC_APP_NAME=Uppal Kalan Street Food Guide
+NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=your_google_maps_api_key
+```
 
 4. **Start the development servers**
-   ```bash
-   npm run dev
-   ```
-
-   This runs both frontend (http://localhost:3000) and backend (http://localhost:5000) concurrently.
-
-### Individual Services
-
-**Backend only:**
 ```bash
-cd backend
 npm run dev
 ```
 
-**Frontend only:**
-```bash
-cd frontend
-npm run dev
+This starts both:
+- Backend API: http://localhost:5001
+- Frontend: http://localhost:3000
+
+## 🔑 Configuration
+
+### Google Maps API
+1. Go to [Google Cloud Console](https://console.cloud.google.com/)
+2. Create a new project or select existing
+3. Enable "Maps JavaScript API"
+4. Create credentials (API Key)
+5. Add to `frontend/.env.local` as `NEXT_PUBLIC_GOOGLE_MAPS_API_KEY`
+
+**⚠️ Security Note**: Never commit `.env` or `.env.local` files to GitHub. Use `.env.example` as a template.
+
+## 📁 Project Structure
+
+```
+uppal-local-guide/
+├── frontend/                    # Next.js frontend application
+│   ├── src/
+│   │   ├── app/                # Next.js app directory
+│   │   │   ├── page.tsx        # Main home page
+│   │   │   └── layout.tsx      # Root layout
+│   │   ├── components/         # React components
+│   │   │   ├── recommendation/ # AI recommendation components
+│   │   │   ├── restaurant/     # Restaurant display components
+│   │   │   └── search/         # Search components
+│   │   ├── types/              # TypeScript type definitions
+│   │   └── utils/              # Utility functions
+│   ├── public/                 # Static assets
+│   └── package.json
+│
+├── backend/                     # Express.js API server
+│   ├── controllers/            # Request handlers
+│   ├── routes/                 # API routes
+│   ├── services/               # Business logic
+│   ├── utils/                  # Helper functions
+│   ├── server.js               # Main server file
+│   └── package.json
+│
+├── data/                        # Restaurant data (JSON)
+│   ├── restaurants.json        # Restaurant database
+│   ├── cuisines.json          # Cuisine categories
+│   └── areas.json             # Area information
+│
+├── .kiro/                       # Kiro AI context files
+│   └── steering/               # AI guidance documents
+│       ├── product.md          # Product context
+│       ├── tech.md             # Technical standards
+│       ├── structure.md        # Project structure
+│       ├── api-standards.md    # API conventions
+│       └── testing-standards.md # Testing guidelines
+│
+├── .env.example                # Environment template
+├── .gitignore                  # Git ignore rules
+├── package.json                # Root package config
+└── README.md                   # This file
 ```
 
-## 🧠 How Kiro Powers Local Intelligence
+## 🎯 Usage Examples
 
-### The Secret: `.kiro/steering/product.md`
+### AI Recommendations
 
-This file is where the magic happens. It contains structured knowledge about Uppal Kalan that Kiro uses to make intelligent recommendations:
-
-```markdown
-### Local Context for Kiro
-- Geography: Uppal Kalan's location, landmarks, transportation
-- Food Culture: Telangana cuisine, street food patterns, pricing
-- Dining Patterns: Peak hours, crowd behavior, seasonal changes
-- Target Users: Office workers, students, families, tourists
-- Budget Profiles: Local economic patterns and price expectations
+**Budget-Conscious Query:**
+```
+"I'm a student looking for filling food under ₹100"
 ```
 
-### How Kiro Accelerated Development
-
-1. **Context Understanding**: Instead of hardcoding local knowledge, Kiro learned from structured documentation
-2. **Smart Recommendations**: AI automatically considers local factors like budget patterns and cultural preferences
-3. **Cultural Authenticity**: Recommendations reflect genuine local food culture, not generic suggestions
-4. **Rapid Iteration**: Changes to local context immediately improve recommendation quality
-
-**Time Saved**: What normally takes weeks of manual research and hardcoding was reduced to structured documentation that both humans and AI can understand.
-
-## 📊 Local Data Coverage
-
-### Restaurant Categories
-- **Street Food Vendors**: 15+ authentic local vendors
-- **Traditional Restaurants**: 10+ established eateries  
-- **Modern Outlets**: 8+ contemporary dining options
-- **Specialty Shops**: 5+ unique food experiences
-
-### Cuisine Coverage
-- **Telangana Specialties**: Biryani, Haleem, Mirchi ka Salan
-- **Street Food**: Samosas, Dosas, Chaat varieties
-- **Regional**: North Indian, South Indian, Chinese
-- **Beverages**: Traditional chai, fresh juices, local drinks
-
-### Price Ranges
-- **Ultra Budget** (₹30-50): Street snacks, basic meals
-- **Budget** (₹50-100): Complete meals, popular dishes  
-- **Mid-Range** (₹100-200): Restaurant dining, specialty items
-- **Premium** (₹200+): Fine dining, special occasions
-
-## 🎬 Demo & Screenshots
-
-### Live Demo
-🔗 **[Try the Live Application](YOUR_DEPLOYMENT_URL)**
-
-### Video Walkthrough
-📹 **[Watch Demo Video](YOUR_YOUTUBE_LINK)** (2 minutes)
-
-### Screenshots
-
-**Home Page - Search Interface**
-![Home Page](screenshots/home-page.png)
-
-**Search Results - Restaurant Cards**  
-![Search Results](screenshots/search-results.png)
-
-**Restaurant Detail - Complete Information**
-![Restaurant Detail](screenshots/restaurant-detail.png)
-
-**Mobile Responsive - Touch-Friendly**
-![Mobile View](screenshots/mobile-view.png)
-
-## 🔧 API Documentation
-
-### Base URL
+**Cuisine-Specific:**
 ```
-Development: http://localhost:5000/api/v1
-Production: https://your-api-url.com/api/v1
+"Best biryani in Uppal? I love spicy food"
 ```
 
-### Key Endpoints
-
-**Get Recommendations**
-```http
-POST /api/v1/recommendations
-Content-Type: application/json
-
-{
-  "budget": 100,
-  "time": "lunch", 
-  "cuisine": "telangana"
-}
+**Family Dining:**
+```
+"Family dinner spot with variety, need parking and AC"
 ```
 
-**Search Restaurants**
-```http
-GET /api/v1/restaurants/search?q=biryani&area=uppal-market&maxPrice=200
+**Time-Based:**
+```
+"Quick breakfast near Uppal Market before 9 AM"
 ```
 
-**Restaurant Details**
-```http
-GET /api/v1/restaurants/:id
+### Search & Filter
+
+1. **Budget Slider**: Adjust from ₹30 to ₹500
+2. **Time Selection**: Choose breakfast, lunch, evening, or night
+3. **Cuisine Filter**: Select from Telangana, Street Food, South Indian, etc.
+4. **Quick Searches**: One-click presets for common scenarios
+
+## 🛠️ Technology Stack
+
+### Frontend
+- **Framework**: Next.js 16.1 with React 19.2
+- **Language**: TypeScript 5.0
+- **Styling**: Tailwind CSS
+- **State Management**: React Hooks
+- **HTTP Client**: Fetch API
+- **Maps**: Google Maps JavaScript API
+
+### Backend
+- **Runtime**: Node.js 18+
+- **Framework**: Express.js 4.18
+- **Data Storage**: JSON files
+- **Middleware**: CORS, Helmet, Compression
+- **Rate Limiting**: express-rate-limit
+
+### Development Tools
+- **Package Manager**: npm
+- **Code Quality**: ESLint
+- **Version Control**: Git
+
+## 📡 API Endpoints
+
+### Restaurants
+```
+GET    /api/v1/restaurants              # Get all restaurants
+GET    /api/v1/restaurants/:id          # Get specific restaurant
+GET    /api/v1/restaurants/search       # Search restaurants
 ```
 
-For complete API documentation, see [API Guide](docs/api/README.md).
+### Recommendations
+```
+POST   /api/v1/recommendations          # Get personalized recommendations
+GET    /api/v1/recommendations/popular  # Get popular recommendations
+```
+
+### Search & Filters
+```
+GET    /api/v1/search                   # General search
+GET    /api/v1/areas                    # Get all areas
+GET    /api/v1/cuisines                 # Get cuisine types
+```
+
+### Health Check
+```
+GET    /health                          # API health status
+```
 
 ## 🧪 Testing
 
-### Run Tests
 ```bash
-# Frontend tests
+# Run all tests
+npm test
+
+# Run frontend tests
 cd frontend && npm test
 
-# Backend tests  
+# Run backend tests
 cd backend && npm test
 
-# All tests
-npm test
+# Run with coverage
+npm run test:coverage
 ```
 
-### Test Coverage
-- Unit tests for core components
-- API endpoint testing
-- Integration tests for search functionality
-- Mobile responsiveness testing
-
-## 🚀 Deployment
+## 🚢 Deployment
 
 ### Frontend (Vercel)
-```bash
-cd frontend
-vercel --prod
-```
+1. Push code to GitHub
+2. Import project in [Vercel](https://vercel.com)
+3. Configure:
+   - Framework Preset: Next.js
+   - Root Directory: `frontend`
+4. Add environment variables in Vercel dashboard
+5. Deploy automatically
 
 ### Backend (Railway/Render)
-```bash
-# Push to main branch triggers automatic deployment
-git push origin main
-```
+1. Push code to GitHub
+2. Create new project in [Railway](https://railway.app) or [Render](https://render.com)
+3. Connect GitHub repository
+4. Set root directory: `backend`
+5. Add environment variables
+6. Deploy
 
-### Environment Setup
-1. Set production environment variables
-2. Configure database connections
-3. Update CORS settings for production domains
-4. Test all endpoints in production
-
-## 📝 Technical Blog for AWS Builder Center
-
-**Ready-to-Submit Blog Post**: [AWS_BUILDER_CENTER_BLOG.md](./AWS_BUILDER_CENTER_BLOG.md)
-
-This comprehensive technical article covers:
-- **Architecture & Design**: Full-stack implementation details
-- **AI Integration**: How Kiro powers cultural intelligence
-- **Performance Optimizations**: Frontend and backend optimizations
-- **AWS Deployment**: Production-ready cloud architecture
-- **Cultural Context**: Building locally-aware applications
-- **Code Examples**: Real implementation snippets
-- **Lessons Learned**: Technical and business insights
-
-**How to Submit to AWS Builder Center:**
-1. Copy the content from `AWS_BUILDER_CENTER_BLOG.md`
-2. Visit [AWS Builder Center](https://aws.amazon.com/builders/)
-3. Submit as a technical blog post
-4. Include the GitHub repository link: https://github.com/MitulNayakwadi/uppallocalguide
+### Environment Variables for Production
+Update these in your deployment platform:
+- `NEXT_PUBLIC_API_URL`: Your backend API URL
+- `NEXT_PUBLIC_GOOGLE_MAPS_API_KEY`: Google Maps API key
+- `PORT`: Backend server port (usually 5001)
+- `NODE_ENV`: Set to `production`
 
 ## 🤝 Contributing
 
-Want to add more restaurants or improve the guide?
+This project was built for AI for Bharat Week 5 challenge. Contributions are welcome!
 
-1. **Add Restaurant Data**: Update `data/restaurants.json`
-2. **Enhance Context**: Improve `.kiro/steering/product.md`
-3. **Fix Issues**: Check GitHub issues for bugs
-4. **Suggest Features**: Open an issue with your idea
-
-### Local Development
 1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-## 📄 License
+## 📝 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+MIT License - see LICENSE file for details
 
 ## 🙏 Acknowledgments
 
-- **AI for Bharat** for organizing this amazing challenge
-- **Kiro** for providing the AI context system that made local intelligence possible
-- **Local Vendors** in Uppal Kalan for inspiring authentic food experiences
-- **Community** for testing and feedback
+- **AI for Bharat**: For organizing the challenge
+- **Kiro AI**: For providing the AI development platform
+- **Google Gemini**: For powering intelligent recommendations
+- **Uppal Kalan Community**: For inspiring this local food guide
 
-## 📞 Contact & Support
+## 📞 Support
 
-- **GitHub Issues**: [Report bugs or request features](https://github.com/YOUR_USERNAME/uppal-local-guide/issues)
-- **Email**: your.email@example.com
-- **Blog**: [Technical writeup](YOUR_BLOG_URL)
-- **Demo**: [Live application](YOUR_DEPLOYMENT_URL)
+For issues or questions:
+- Open an issue on GitHub
+- Check the [documentation](./docs)
+- Review the [API standards](./.kiro/steering/api-standards.md)
+
+## 🎉 Built With Kiro
+
+This project showcases Kiro AI's capabilities in:
+- Understanding local context and culture
+- Building full-stack applications
+- Integrating multiple APIs
+- Creating intelligent recommendation systems
+- Following best practices and standards
 
 ---
 
-**Built with ❤️ for Uppal Kalan food lovers**
+**Made with ❤️ for Uppal Kalan food lovers**
 
-*This project demonstrates how AI can understand and serve local communities by learning from structured cultural context, making technology more relevant and useful for specific places and people.*
+© 2024 Uppal Food Guide. Built for AI for Bharat Week 5.

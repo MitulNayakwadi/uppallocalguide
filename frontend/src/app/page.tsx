@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import AIRecommendations from '@/components/recommendation/AIRecommendations';
 
 interface Restaurant {
   id?: string;
@@ -147,6 +148,9 @@ export default function Home() {
             From street-side samosas to traditional biryani - find your perfect meal with local intelligence
           </p>
         </div>
+
+        {/* AI Recommendations Section */}
+        <AIRecommendations />
 
         {/* Search Form */}
         <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl p-8 mb-12 border border-orange-100">

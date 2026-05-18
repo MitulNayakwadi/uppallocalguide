@@ -65,3 +65,5 @@ temp/
 # 
 # This directory contains the context files that teach
 # Kiro about Uppal Kalan local knowledge.
+# Local Netlify folder
+.netlify
