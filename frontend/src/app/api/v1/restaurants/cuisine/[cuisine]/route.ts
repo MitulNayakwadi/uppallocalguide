@@ -9,10 +9,10 @@ const corsHeaders = {
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { cuisine: string } }
+  { params }: { params: Promise<{ cuisine: string }> }
 ) {
   try {
-    const cuisine = params.cuisine;
+    const { cuisine } = await params;
     const restaurants = getRestaurantsByCuisine(cuisine);
 
     return NextResponse.json(

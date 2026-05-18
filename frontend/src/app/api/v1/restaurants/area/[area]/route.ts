@@ -9,10 +9,10 @@ const corsHeaders = {
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { area: string } }
+  { params }: { params: Promise<{ area: string }> }
 ) {
   try {
-    const area = params.area;
+    const { area } = await params;
     const restaurants = getRestaurantsByArea(area);
 
     return NextResponse.json(

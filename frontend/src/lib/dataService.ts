@@ -2,62 +2,62 @@ import fs from 'fs';
 import path from 'path';
 
 // Cache the data to avoid reading files multiple times
-let cachedRestaurants: any[] | null = null;
-let cachedCuisines: any = null;
-let cachedAreas: any = null;
+let cachedRestaurants: any[] | undefined;
+let cachedCuisines: any | undefined;
+let cachedAreas: any | undefined;
 
-export function loadRestaurantsData() {
+export function loadRestaurantsData(): any[] {
   if (cachedRestaurants) return cachedRestaurants;
   
   try {
     const dataPath = path.join(process.cwd(), 'data', 'restaurants.json');
     const data = fs.readFileSync(dataPath, 'utf8');
     cachedRestaurants = JSON.parse(data);
-    return cachedRestaurants;
+    return cachedRestaurants ?? [];
   } catch (error) {
     console.error('Error loading restaurants data:', error);
     return [];
   }
 }
 
-export function loadCuisinesData() {
+export function loadCuisinesData(): any {
   if (cachedCuisines) return cachedCuisines;
   
   try {
     const dataPath = path.join(process.cwd(), 'data', 'cuisines.json');
     const data = fs.readFileSync(dataPath, 'utf8');
     cachedCuisines = JSON.parse(data);
-    return cachedCuisines;
+    return cachedCuisines ?? {};
   } catch (error) {
     console.error('Error loading cuisines data:', error);
     return {};
   }
 }
 
-export function loadAreasData() {
+export function loadAreasData(): any {
   if (cachedAreas) return cachedAreas;
   
   try {
     const dataPath = path.join(process.cwd(), 'data', 'areas.json');
     const data = fs.readFileSync(dataPath, 'utf8');
     cachedAreas = JSON.parse(data);
-    return cachedAreas;
+    return cachedAreas ?? {};
   } catch (error) {
     console.error('Error loading areas data:', error);
     return {};
   }
 }
 
-export function getAllRestaurants() {
+export function getAllRestaurants(): any[] {
   return loadRestaurantsData();
 }
 
-export function getRestaurantById(id: string) {
+export function getRestaurantById(id: string): any {
   const restaurants = loadRestaurantsData();
   return restaurants.find((r: any) => r.id === id);
 }
 
-export function getRestaurantsByArea(area: string) {
+export function getRestaurantsByArea(area: string): any[] {
   const restaurants = loadRestaurantsData();
   const areaKey = area.toLowerCase().replace(/\s+/g, '-');
   return restaurants.filter((r: any) =>
@@ -65,7 +65,7 @@ export function getRestaurantsByArea(area: string) {
   );
 }
 
-export function getRestaurantsByCuisine(cuisine: string) {
+export function getRestaurantsByCuisine(cuisine: string): any[] {
   const restaurants = loadRestaurantsData();
   const cuisineKey = cuisine.toLowerCase().replace(/\s+/g, '_');
   return restaurants.filter((r: any) =>
@@ -75,7 +75,7 @@ export function getRestaurantsByCuisine(cuisine: string) {
   );
 }
 
-export function searchRestaurants(filters: any) {
+export function searchRestaurants(filters: any): any[] {
   let restaurants = [...loadRestaurantsData()];
 
   // Text search
@@ -127,14 +127,14 @@ export function searchRestaurants(filters: any) {
   return restaurants;
 }
 
-export function getPopularRestaurants(limit = 10) {
+export function getPopularRestaurants(limit = 10): any[] {
   const restaurants = loadRestaurantsData();
   return restaurants
     .sort((a: any, b: any) => b.rating.average - a.rating.average)
     .slice(0, limit);
 }
 
-export function getBudgetRestaurants(budget: number) {
+export function getBudgetRestaurants(budget: number): any[] {
   const restaurants = loadRestaurantsData();
   return restaurants.filter(
     (r: any) => r.priceRange.min <= budget && r.priceRange.max >= budget

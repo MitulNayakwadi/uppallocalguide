@@ -67,3 +67,6 @@ temp/
 # Kiro about Uppal Kalan local knowledge.
 # Local Netlify folder
 .netlify
+
+.vercel
+.env*.local

@@ -9,10 +9,11 @@ const corsHeaders = {
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { budget: string } }
+  { params }: { params: Promise<{ budget: string }> }
 ) {
   try {
-    const budget = parseInt(params.budget);
+    const { budget: budgetValue } = await params;
+    const budget = parseInt(budgetValue);
     if (isNaN(budget)) {
       return NextResponse.json(
         {

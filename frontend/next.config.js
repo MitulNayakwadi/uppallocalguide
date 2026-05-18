@@ -29,8 +29,6 @@ const nextConfig = {
     NEXT_PUBLIC_ENVIRONMENT: process.env.NEXT_PUBLIC_ENVIRONMENT || 'development',
   },
 
-  // Vercel Optimization
-  swcMinify: true,
   compress: true,
   poweredByHeader: false,
   
